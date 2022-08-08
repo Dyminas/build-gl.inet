@@ -1,0 +1,11 @@
+feeds:
+  - name: kenzok8_packages
+    uri: https://github.com/kenzok8/small-package.git
+    branch: main
+
+packages:
+  - luci-theme-argon
+  - luci-app-openclash
+  - luci-app-passwall
+  - luci-app-vssr
+  - luci-app-upnp
