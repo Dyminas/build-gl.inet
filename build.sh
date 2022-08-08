@@ -49,7 +49,6 @@ cd wlan-ap/openwrt
 git clone https://github.com/gl-inet/glinet4.x.git $base/glinet
 ./scripts/feeds update -a 
 ./scripts/feeds install -a
-./scripts/feeds uninstall trojan-plus
 make defconfig
 
 if [[ $ui == true  ]]; then 
