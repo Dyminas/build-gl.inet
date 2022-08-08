@@ -52,7 +52,7 @@ git clone https://github.com/gl-inet/glinet4.x.git $base/glinet
 make defconfig
 
 if [[ $ui == true  ]]; then 
-	make -j$(expr $(nproc) + 1) GL_PKGDIR=$base/glinet/ipq60xx/ V=s
+	make -j$(expr $(nproc) + 1) GL_PKGDIR=$base/glinet/ipq60xx/ V=s 1>info.log
 else
-	make -j$(expr $(nproc) + 1) V=s
+	make -j$(expr $(nproc) + 1) V=s 1>info.log
 fi
