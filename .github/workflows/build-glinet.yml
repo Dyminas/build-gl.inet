@@ -33,6 +33,7 @@ jobs:
         git config --global user.name "action"
     - name: make 
       run: |
+        sudo chmod 777 ./build.sh
         ./build.sh ~ ${{ inputs.device }} ${{ inputs.ui }}
         
     - name: Organize files
