@@ -16,6 +16,4 @@ packages:
   - luci-app-upnp
 
 diffconfig: |
-  CONFIG_PACKAGE_luci-app-mosdns=n
   CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=n
-  CONFIG_PACKAGE_kmod-sched-cake=n

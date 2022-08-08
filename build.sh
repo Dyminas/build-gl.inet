@@ -49,10 +49,12 @@ cd wlan-ap/openwrt
 git clone https://github.com/gl-inet/glinet4.x.git $base/glinet
 ./scripts/feeds update -a 
 ./scripts/feeds install -a
-make defconfig
 
-if [[ $ui == true  ]]; then 
-	make -j$(expr $(nproc) + 1) GL_PKGDIR=$base/glinet/ipq60xx/ V=s 1>info.log
+make defconfig
+make -j$(expr $(nproc) + 1) download V=s
+
+if [[ $ui == true  ]]; then
+	make GL_PKGDIR=$base/glinet/ipq60xx/ V=s 1>info.log
 else
-	make -j$(expr $(nproc) + 1) V=s 1>info.log
+	make V=s 1>info.log
 fi
