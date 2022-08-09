@@ -1,12 +1,7 @@
 feeds:
-  - name: kenzok8_packages
-    uri: https://github.com/kenzok8/openwrt-packages.git
-    branch: master
-    revision: 729afa89a828b6908cf98f6d69474297a5fa945d
-  - name: kenzok8_small
-    uri: https://github.com/kenzok8/small.git
-    branch: master
-    revision: 99791eed039d98056be82b4ecc57b20c6ac322b6
+  - name: custom_packages
+    uri: https://github.com/Dyminas/openwrt-packages.git
+    branch: main
 
 packages:
   - luci-theme-argon
