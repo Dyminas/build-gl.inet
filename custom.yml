@@ -6,8 +6,7 @@ feeds:
 packages:
   - luci-theme-argon
   - luci-app-passwall
-  - luci-app-vssr
-  - luci-app-upnp
+  - luci-app-ssr-plus
 
 diffconfig: |
   CONFIG_PACKAGE_luci-theme-bootstrap=n
