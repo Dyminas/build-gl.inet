@@ -18,6 +18,7 @@ on:
         description: '是否包含官方UI'
         required: false
         type: boolean
+        default: true
         
 jobs:
   build:

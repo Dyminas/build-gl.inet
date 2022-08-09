@@ -51,10 +51,10 @@ git clone https://github.com/gl-inet/glinet4.x.git $base/glinet
 ./scripts/feeds install -a
 
 make defconfig
-make -j$(expr $(nproc) + 1) download V=s
+make -j$(expr $(nproc) + 1) download V=s >/dev/null
 
 if [[ $ui == true  ]]; then
-	make GL_PKGDIR=$base/glinet/ipq60xx/ V=s 1>info.log
+	make -j$(expr $(nproc) + 1) GL_PKGDIR=$base/glinet/ipq60xx/ V=s 1>/dev/null
 else
-	make V=s 1>info.log
+	make -j$(expr $(nproc) + 1) V=s 1>/dev/null
 fi
