@@ -5,10 +5,7 @@ feeds:
 
 packages:
   - luci-theme-argon
-  - luci-app-passwall
-  - luci-app-ssr-plus
+  - luci-app-vssr
 
 diffconfig: |
-  CONFIG_PACKAGE_luci-theme-bootstrap=n
-  CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=n
-  CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=n
+  CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Kcptun=y

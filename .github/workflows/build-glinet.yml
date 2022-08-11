@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       device:
-        description: '选择设备'     
+        description: 'Target Device'     
         required: true
         default: 'target_wlan_ap-gl-axt1800' 
         type: choice
@@ -15,7 +15,7 @@ on:
         - target_wlan_ap-gl-axt1800-5-4
         
       ui:
-        description: '是否包含官方UI'
+        description: 'Inluce GL.iNet UI'
         required: false
         type: boolean
         default: true
