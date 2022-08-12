@@ -6,6 +6,7 @@ feeds:
 packages:
   - luci-theme-argon
   - luci-app-passwall
+  - luci-app-openclash
 
 diffconfig: |
   CONFIG_PACKAGE_luci-theme-argon=y
